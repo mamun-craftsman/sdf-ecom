@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap');
+
+:root {
+    --sada: #F9F1BF;
+    --theme: #ff9f22;
+    --brown: #1B266B;
+    --purp: #f541ff;
+}
+
+body {
+    font-family: "Noto Serif Bengali", serif;
+    color: var(--brown);
+    background-color: #D9EAF7;
+    font-size: 1.25em;
+}
+
+
+
+
+.clip-leftpoint {
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
+}
+
+.shadow-w {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shadow-inset {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+
+.fade-in {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.fade-in.show {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+/* Modal Container Styling */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Modal Content Styling */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    /* Hide overflow here */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the modal content scrollable */
+.modal-body {
+    overflow-y: auto;
+    /* Scrollable area */
+    max-height: 60vh;
+    /* Adjust based on the modal size */
+    padding: 20px;
+}
+
+/* Thin scrollbar styling */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Sticky Header Styling */
+.modal-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    padding: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Ensure body doesn't scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+.glass{
+    background: #d9d8d8c8;
+    backdrop-filter: blur(3px);
+}
+.reg-bg{
+    background-image: url('../images/reg-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* 
+<div class="bg-[#eaf4fb] shadow-lg text-[#1B266B] inline-block  px-2 relative border-right-radius overflow-hidden">
+    <p class="text-xl md:text-2xl lg:text-3xl ml-2 font-bold pr-12 py-3 z-10 relative">সেরা পণ্য,
+সেরা অফার </p>
+    <div class="absolute bg-gr1 h-full top-0 w-[50px] left-1 animate-move"></div><div class="w-3 h-3 rounded-full absolute bg-[#1B266B] top-5 md:top-6 right-5">
+    </div>
+</div>
+
+*/
+
+
+  

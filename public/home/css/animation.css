@@ -1,0 +1,49 @@
+.bg-gr1 {
+    background: #eaf4fb;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaf4fb, #c2c2d3fd, #eaf4fb);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaf4fb, #c2c2d3fd, #eaf4fb);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.border-right-radius {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@keyframes moveHorizontally {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(400px);
+    }
+}
+
+.animate-move {
+    display: inline-block;
+    animation: moveHorizontally 1.7s  infinite;
+
+}
+
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+
+/*add to cart*/
+.slider {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hidden-slider {
+    transform: translateX(100%);
+  }
+
+  .visible-slider {
+    transform: translateX(0%);
+  }
